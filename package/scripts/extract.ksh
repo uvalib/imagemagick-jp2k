@@ -12,7 +12,7 @@ NAMESPACE=uvadave
 OUTDIR=$(pwd)/distro/
 mkdir -p ${OUTDIR} > /dev/null 2>&1
 
-for target in /usr/local/bin/convert; do
+for target in /usr/local/bin/magick; do
    bn=$(basename $target)
    ${DOCKER_TOOL} run -v ${OUTDIR}:/mnt/mount --rm --entrypoint cp ${NAMESPACE}/${INSTANCE} ${target} /mnt/mount/${bn}
 done
