@@ -9,7 +9,7 @@ else
 fi
 
 # set the definitions
-INSTANCE=imagemagick-jp2k
+INSTANCE=imagemagick-alpine
 NAMESPACE=uvadave
 
 # build the image

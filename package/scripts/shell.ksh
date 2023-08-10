@@ -9,7 +9,7 @@ else
 fi
 
 # set the definitions
-INSTANCE=imagemagick-jp2k
+INSTANCE=imagemagick-alpine
 NAMESPACE=uvadave
 
 $DOCKER_TOOL run -it $NAMESPACE/$INSTANCE /bin/sh -l
